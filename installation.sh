@@ -1,6 +1,6 @@
 #!bin/bash
 sudo_check(){
-	if ["$EUID" = 0]; then
+	if ["$EUID" == 0]; then
 		echo "please run this script as normal user"
 		sleep 3
 		exit
@@ -14,7 +14,7 @@ dir_check(){
 		echo "config dir found, beggining installation"
 	else
 		echo "config dir not found, creating"
-		mkdir home/$USER/.config
+		mkdir /home/$USER/.config
 	fi
 }
 #check for .config directory
@@ -24,7 +24,7 @@ dir_check2(){
 		echo "picom dir found"
 	else
 		echo "picom dir not found, creating one"
-		mkdir home/$USER/.config/picom
+		mkdir /home/$USER/.config/picom
 	fi
 }
 
@@ -42,7 +42,7 @@ dotfiles_setup(){
 	cp polybar/config.ini ~/.config/polybar
 	cp kitty/kitty.conf ~/.config/kitty
 	#rofi
-	cp picom/picom ~/.config/picom
+	cp picom/picom.conf ~/.config/picom
 	cp xorg/.xinitrc/ ~/
 	cp bash/.bashrc ~/
 }
