@@ -65,9 +65,8 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 	pkg_install
 	dotfiles_setup
 	chmod_bspwm
-	echo "Installation finished. Do you wish to reboot?"
-	read reboot
-	if [[ $reboot == y*]] then
+	read -p "Installation finished. Do you wish to reboot?" -r
+	if [[ $REPLY =~ ^[Yy]$ ]]; then
 		echo "rebooting..."
 		sleep 3
 		reboot
