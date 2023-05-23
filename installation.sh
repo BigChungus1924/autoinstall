@@ -1,7 +1,7 @@
 #!bin/bash
 sudo_check(){
-	if ["$EUID" -ne 0]; then
-		echo "please run this script as root"
+	if ["$EUID" = 0]; then
+		echo "please run this script as normal user"
 		sleep 3
 		exit
 	fi
@@ -29,8 +29,8 @@ dir_check2(){
 }
 
 pkg_install(){
-	apt -y update
-	apt -y install bspwm nnn kitty rofi picom polybar pulseaudio xorg feh
+	sudo apt -y update
+	sudo apt -y install bspwm nnn kitty rofi picom polybar pulseaudio xorg feh
 }
 #install packages and programs
 dotfiles_setup(){
