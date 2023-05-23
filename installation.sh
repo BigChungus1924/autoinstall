@@ -56,9 +56,8 @@ chmod_bspwm(){
 
 
 #run all the functions
-echo "Proceed with installation?"
-read installation
-if [[ "$installation" == y ]]; then
+read -p "Proceed with installation?" -n 1 -r
+if [[ ! $REPLY =~ ^[Yy]$ ]]; then
 	echo "Installing..."
 	sudo_check
 	dir_check
