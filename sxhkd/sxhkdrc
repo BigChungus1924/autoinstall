@@ -1,0 +1,12 @@
+alt + Return
+	kitty
+alt + a
+	bspc node -k
+alt + shift + s
+	bspc wm -r
+control + space
+	rofi -show run 
+alt + {Left,Down,Up,Right}
+	bspc node -f {west,south,north,east}
+alt + s
+	kitty nnn

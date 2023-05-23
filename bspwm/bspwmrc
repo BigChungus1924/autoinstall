@@ -1,0 +1,15 @@
+#!/bin/bash
+
+xsetroot -cursor_name left_ptr
+sxhkd &
+feh --bg-scale /home/bob/Downloads/jungle &
+
+bspc config border_width	0
+bspc config window_gap		30
+
+bspc config split-ratio		0.6
+bspc config focus_follows_pointer	true
+bspc config pointer_modifier	mod1
+
+bspc config automatic_scheme	spiral
+
