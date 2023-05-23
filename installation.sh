@@ -43,8 +43,8 @@ dotfiles_setup(){
 	cp kitty/kitty.conf ~/.config/kitty
 	#rofi
 	cp picom/picom.conf ~/.config/picom
-	cp xorg/.xinitrc/ ~/
-	cp bash/.bashrc ~/
+	cp .xinitrc/ ~/
+	cp .bashrc ~/
 }
 #copy dotfiles over to .config
 
