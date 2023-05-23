@@ -58,7 +58,7 @@ chmod_bspwm(){
 #run all the functions
 echo "Proceed with installation?"
 read installation
-if [[$installation == y* ]]; then
+if [[ $installation == y* ]]; then
 	echo "Installing..."
 	sudo_check
 	dir_check
@@ -68,7 +68,7 @@ if [[$installation == y* ]]; then
 	chmod_bspwm
 	echo "Installation finished. Do you wish to reboot?"
 	read reboot
-	if [[$reboot == y*]]; then
+	if [[ $reboot == y*]]; then
 		echo "rebooting..."
 		sleep 3
 		reboot
