@@ -1,4 +1,4 @@
-# !bin/bash
+#!bin/bash
 sudo_check(){
 	if ["$EUID" -ne 0]; then
 		echo "please run this script as root"
