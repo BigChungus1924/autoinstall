@@ -56,7 +56,7 @@ chmod_bspwm(){
 
 
 #run all the functions
-read -p "Proceed with installation?" 1 -r
+read -p "Proceed with installation?" -r
 if [[ $REPLY =~ ^[Yy]$ ]]; then
 	echo "Installing..."
 	sudo_check
