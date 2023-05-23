@@ -67,7 +67,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 	chmod_bspwm
 	echo "Installation finished. Do you wish to reboot?"
 	read reboot
-	if [[ $reboot == y*]]; then
+	if [[ $reboot == y*]] then
 		echo "rebooting..."
 		sleep 3
 		reboot
