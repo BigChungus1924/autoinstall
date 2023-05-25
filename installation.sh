@@ -35,13 +35,14 @@ pkg_install(){
 #install packages and programs
 dotfiles_setup(){
 	mkdir ~/.config/bspwm
-	cp bspwm/bspwmrc ~/.config/bspwm
 	mkdir ~/.config/sxhkd
-	cp sxhkd/sxhkdrc ~/.config/sxhkd
 	mkdir ~/.config/polybar
+	mkdir ~/.config/rofi
+	mkdir ~/.config/kitty
+	cp bspwm/bspwmrc ~/.config/bspwm
+	cp sxhkd/sxhkdrc ~/.config/sxhkd
 	cp polybar/config.ini ~/.config/polybar
 	cp kitty/kitty.conf ~/.config/kitty
-	mkdir ~/.config/rofi
 	cp rofi/config.rasi ~/.config/rofi
 	cp rofi/theme1.rasi ~/.config/rofi
 	cp picom/picom.conf ~/.config/picom
