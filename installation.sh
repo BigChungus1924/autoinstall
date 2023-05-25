@@ -41,7 +41,9 @@ dotfiles_setup(){
 	mkdir ~/.config/polybar
 	cp polybar/config.ini ~/.config/polybar
 	cp kitty/kitty.conf ~/.config/kitty
-	#rofi
+	mkdir ~/.config/rofi
+	cp rofi/config.rasi ~/.config/rofi
+	cp rofi/theme1.rasi ~/.config/rofi
 	cp picom/picom.conf ~/.config/picom
 	cp .xinitrc ~/
 	cp .bashrc ~/
