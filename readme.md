@@ -16,3 +16,4 @@ bash installation.sh
 Make sure to run with bash instead of sh
 ### About
 As stated earlier, this scripts leaves you with a minimal graphical environnement that is perfectly functionnal. This script is made for Debian bases distributions as it uses the apt package manager. After instalation, you are left with around ~800 packages.
+It comes with a default wallpaper set using **feh** trough **bspwmrc**. Feel free to change it.
