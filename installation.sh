@@ -29,8 +29,8 @@ dir_check2(){
 }
 
 pkg_install(){
-	sudo apt -y update
-	sudo apt -y install bspwm nnn kitty rofi picom polybar pulseaudio xorg feh
+	sudo pacman -S -y update
+	sudo pacman -S -y install bspwm nnn kitty rofi picom polybar pulseaudio xorg feh
 }
 #install packages and programs
 dotfiles_setup(){
